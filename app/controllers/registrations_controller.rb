@@ -20,7 +20,7 @@ class RegistrationsController < Milia::RegistrationsController
 
     sign_out_session!
        # next two lines prep signup view parameters
-    prep_signup_view( tenant_params, user_params, coupon_params )
+    #prep_signup_view( tenant_params, user_params, coupon_params )
 
        # validate recaptcha first unless not enabled
     if !::Milia.use_recaptcha  ||  verify_recaptcha
